@@ -1,0 +1,24 @@
+{
+    "format_version": 1,
+    "header": {
+        "name": "Gravity",
+        "description": "See https://github.com/ElizabethF2/MinecraftGravity for help",
+        "uuid": "8fa782ec-32f5-4e72-9133-569472e121d2",
+        "version": [0, 0, 1]
+    },
+    "modules": [
+        {
+            "type": "script",
+            "uuid": "a87a6fd7-4f63-4ea6-9ad7-a4ea09c2f0a9",
+            "version": [0, 0, 1],
+            "language": "javascript",
+            "entry": "scripts/main.js"
+        }
+    ],
+    "dependencies": [
+      {
+        "module_name": "@minecraft/server",
+        "version": "2.4.0-beta"
+      }
+    ]
+}

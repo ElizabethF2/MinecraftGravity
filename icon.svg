@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" version="1.1" id="icon" xml:space="preserve">
+  <g id="bg">
+    <rect style="fill:#003e00;fill-opacity:1" id="bg-bg" width="473.98599" height="466.85846" x="13.067286" y="17.819025"/>
+    <rect style="fill:#005600;fill-opacity:1" id="fg-bg" width="475.17401" height="473.98608" x="22.570766" y="24.946636"/>
+  </g>
+  <g id="block" style="display:inline" transform="translate(-6,30)">
+    <path style="display:inline;opacity:1;fill:#4d983d;fill-opacity:1" d="M 133.04873,216.20417 273.92498,293.71415 412.61352,208.52984 272.03713,133.04872 Z" id="path31"/>
+    <path style="display:inline;opacity:1;fill:#4a8f3a;fill-opacity:1" d="m 133.04873,216.20417 140.87625,77.50998 0.059,62.65021 -141.67392,-77.73233 z" id="path33"/>
+    <path style="display:inline;opacity:1;fill:#478a37;fill-opacity:1" d="m 412.61352,208.52984 -138.68854,85.18431 0.059,62.65021 138.63016,-83.88538 z" id="path34"/>
+    <path style="fill:#71411f;fill-opacity:1" d="m 132.15998,380.33179 141.50893,76.06636 0.31507,-100.03379 -141.67392,-77.73233 z" id="path35"/>
+    <path style="fill:#9b572a;fill-opacity:1" d="m 409.2285,376.93217 -135.55959,79.46598 0.31507,-100.03379 138.63016,-83.88538 z" id="path36"/>
+  </g>
+  <g id="woosh" transform="translate(-18,-2)">
+    <path style="opacity:1;fill:#808080;fill-opacity:1;stroke:#808080;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="M 270,44 V 152" id="path37"/>
+    <path style="opacity:1;fill:#808080;fill-opacity:1;stroke:#808080;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="M 220,74 V 182" id="path38"/>
+    <path style="opacity:1;fill:#808080;fill-opacity:1;stroke:#808080;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" d="M 316,58 V 166" id="path39"/>
+  </g>
+  <g id="title" transform="translate(-10)">
+    <text xml:space="preserve" id="bg-title" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:109.333px;font-family:Hack;-inkscape-font-specification:'Hack, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;display:inline;opacity:1;fill:#003900;fill-opacity:1;stroke:none;stroke-width:5;stroke-dasharray:none;stroke-opacity:1" transform="translate(0,-2)">
+      <tspan x="42" y="306.73407" id="tspan1">Gravity</tspan>
+    </text>
+    <text xml:space="preserve" id="fg-title" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:109.333px;font-family:Hack;-inkscape-font-specification:'Hack, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;display:inline;opacity:1;fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:5;stroke-dasharray:none;stroke-opacity:1" transform="translate(-4,-8)">
+      <tspan x="42" y="306.73407" id="tspan2">Gravity</tspan>
+    </text>
+  </g>
+</svg>
