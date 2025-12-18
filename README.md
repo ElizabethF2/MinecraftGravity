@@ -1,17 +1,17 @@
 # Minecraft Gravity
 
-Gravity is a mod for the PC and mobile versions of Minecraft: Bedrock Edition which improves realism by causing all blocks left floating to fall. It's designed to interoperate with other mods (e.g. using a rocket launcher mod with Gravity will cause the debris left from the rocket to fall rather than remain floating) and can be used with any other feature of Bedrock including all DLC and RTX lighting. Gravity is a server-side mod which supports multiplayer and only needs to be installed by the host. It may be possible to use it on consoles by hosting the server and mod on a supported device but this is untested.
+Gravity is a mod for the PC and mobile versions of Minecraft: Bedrock Edition which improves realism by causing all blocks left floating to fall. It's designed to interoperate with other mods (e.g. using a rocket launcher mod with Gravity will cause the debris left from the rocket to fall rather than remain floating) and can be used with any other feature of Bedrock including all DLC and RTX lighting. Gravity is a server-side mod which supports multiplayer and only needs to be installed by the host. It may be possible to use it on consoles by hosting the server and mod on a supported device though this is untested.
 
 
 ## Installation
 
-Download the latest version of the mod from [releases](https://github.com/ElizabethF2/MinecraftGravity/releases) and open it from your browser's downloads page or by using your device's file browser. If prompted, select Minecraft as the application to use to open the file. Minecraft should automatically import the mod.
+Download the latest version of the mod by selecting the "Gravity.mcpack" link from the [releases](https://github.com/ElizabethF2/MinecraftGravity/releases/latest) page and open the downloaded file from your browser's downloads page or by using your device's file browser. If prompted, select Minecraft as the application to use to open the file. Minecraft should automatically import the mod.
 
 Create a new world or edit an existing world and add the mod to the world under Add-Ons > Behavior Packs.
 
 You must enable "Beta APIs" under Experiments or the mod will not run. This requirement should be removed in future versions of the mod once the API this mod uses is out of beta on Minecraft.
 
-The mod can be uninstalled by going to Settings > General > Storage > Behavior Packs in Minecraft.
+The mod can be uninstalled by going to Settings > General > Storage > Behavior Packs in Minecraft, selecting "Gravity" from the list and then selecting the delete (trash can) icon.
 
 
 ## Usage
@@ -39,7 +39,7 @@ Try these steps if you encounter any issues:
   - Turn on logging before loading your world (Settings > Creator > Enable Content Log GUI), load your world then check the log for errors (Settings > Creator > Content Log History). Please include a copy of any errors if you're opening an issue.
   - If blocks aren't falling, use `!gravq` to check the queue size to ensure the blocks aren't just waiting in the queue.
   - If the queue size isn't decreasing over time, ensure the mod is enabled via `!grav`
-  - The queue handles passes from most recently broken block to least recently broken block. If you're trying to get a specif block or group of blocks to fall and you don't want to wait, you can break a block near them to "jump the queue" and add a pass that will be handled immediately. Note that doing this will just delay the other passes that are already pending.
+  - The queue handles passes from most recently broken block to least recently broken block. If you're trying to get a specific block or group of blocks to fall and you don't want to wait, you can break a block near them to "jump the queue" and add a pass that will be handled immediately. Note that doing this will just delay the other passes that are already pending.
 
 
 ## Advanced Usage
