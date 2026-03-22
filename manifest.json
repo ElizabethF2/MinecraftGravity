@@ -4,7 +4,7 @@
         "name": "Gravity",
         "description": "See https://github.com/ElizabethF2/MinecraftGravity for help",
         "uuid": "8fa782ec-32f5-4e72-9133-569472e121d2",
-        "version": [0, 0, 1]
+        "version": [0, 0, 3]
     },
     "modules": [
         {
@@ -18,7 +18,7 @@
     "dependencies": [
       {
         "module_name": "@minecraft/server",
-        "version": "2.5.0-beta"
+        "version": "2.6.0-beta"
       }
     ]
 }
