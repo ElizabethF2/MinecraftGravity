@@ -1,15 +1,17 @@
 # Minecraft Gravity
 
-Gravity is a mod for the PC and mobile versions of Minecraft: Bedrock Edition which improves realism by causing all blocks left floating to fall. It's designed to interoperate with other mods (e.g. using a rocket launcher mod with Gravity will cause the debris left from the rocket to fall rather than remain floating) and can be used with any other feature of Bedrock including all DLC and RTX lighting. Gravity is a server-side mod which supports multiplayer and only needs to be installed by the host. It may be possible to use it on consoles by hosting the server and mod on a supported device though this is untested.
+Gravity is a mod for the PC, mobile and Xbox versions of Minecraft: Bedrock Edition which improves realism by causing all blocks left floating to fall. It's designed to interoperate with other mods (e.g. using a rocket launcher mod with Gravity will cause the debris left from the rocket to fall rather than remain floating) and can be used with any other feature of Bedrock including all DLC and RTX lighting. Gravity is a server-side mod which supports multiplayer and only needs to be installed by the host. It may be possible to use it on other consoles by hosting the server and mod on a supported device though this is untested.
 
 
 ## Installation
 
-Download the latest version of the mod by selecting the "Gravity.mcpack" link from the [releases](https://github.com/ElizabethF2/MinecraftGravity/releases/latest) page and open the downloaded file from your browser's downloads page or by using your device's file browser. If prompted, select Minecraft as the application to use to open the file. Minecraft should automatically import the mod.
+There are two versions of the mod `Gravity.mcpack` supports using the commands listed below under the Usage section but does not support worlds with achievements and `Gravity_stable.mcpack` can be used in worlds with achievements but does not support the commands. If you are using an Xbox, you must use `Gravity_stable.mcpack`. Otherwise, select whichever one you prefer.
+
+Download the latest version of the mod by selecting the link for either `Gravity.mcpack` or `Gravity_stable.mcpack` from the [releases](https://github.com/ElizabethF2/MinecraftGravity/releases/latest) page and open the downloaded file from your browser's downloads page or by using your device's file browser. If prompted, select Minecraft as the application to use to open the file. Minecraft should automatically import the mod. See [this guide](https://minecraft.wiki/w/Tutorial:Adding_packs_to_Xbox_One_or_Series_X/S_consoles) as a reference if you are installing the mod to your Xbox.
 
 Create a new world or edit an existing world and add the mod to the world under Add-Ons > Behavior Packs.
 
-You must enable "Beta APIs" under Experiments or the mod will not run. This requirement should be removed in future versions of the mod once the API this mod uses is out of beta on Minecraft.
+If using `Gravity.mcpack`, you must enable "Beta APIs" under Experiments or the mod will not run. This requirement should be removed in future versions of the mod once the API this mod uses is out of beta on Minecraft.
 
 The mod can be uninstalled by going to Settings > General > Storage > Behavior Packs in Minecraft, selecting "Gravity" from the list and then selecting the delete (trash can) icon.
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Builds the mcpack file for the mod
+# Builds the mcpack files for the mod
 
 import subprocess, zipfile, shutil, io
 
@@ -8,6 +8,22 @@ INCLUDE = [
   'scripts/main.js',
   'manifest.json',
 ]
+
+def make(files, ico, fname):
+  buf = io.BytesIO()
+  compress_type = zipfile.ZIP_DEFLATED
+  kwargs = {
+    'compress_type': compress_type,
+    'compresslevel': 9,
+  }
+
+  with zipfile.ZipFile(buf, 'a', compress_type, allowZip64 = False) as zf:
+    for i, data in files.items():
+      zf.writestr(zipfile.ZipInfo(i), data, **kwargs)
+    zf.writestr(zipfile.ZipInfo('pack_icon.png'), ico, **kwargs)
+
+  with open(fname, 'xb') as f:
+    f.write(buf.getvalue())
 
 def main():
   files = {}
@@ -22,20 +38,11 @@ def main():
     magick, '-background', 'none', 'icon.svg', 'png:-',
   ))
 
-  buf = io.BytesIO()
-  kwargs = {
-    'compress_type': zipfile.ZIP_DEFLATED,
-    'compresslevel': 9,
-  }
-  with zipfile.ZipFile(
-      buf, 'a', kwargs['compress_type'], allowZip64 = False
-    ) as zf:
-    for i in INCLUDE:
-      zf.writestr(zipfile.ZipInfo(i), files[i], **kwargs)
-    zf.writestr(zipfile.ZipInfo('pack_icon.png'), ico, **kwargs)
+  make(files, ico, 'Gravity.mcpack')
 
-  with open('Gravity.mcpack', 'xb') as f:
-    f.write(buf.getvalue())
+  with open('manifest_stable.json', 'rb') as f:
+    files['manifest.json'] = f.read()
+  make(files, ico, 'Gravity_stable.mcpack')
 
 if __name__ == '__main__':
   main()

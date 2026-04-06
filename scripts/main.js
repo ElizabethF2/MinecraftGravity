@@ -240,40 +240,43 @@ const do_gravity_pass_at_coords = function(dimension, location)
   }
 }
 
-world.afterEvents.chatSend.subscribe(function(evt)
+if (world.afterEvents.chatSend)
 {
-  const sp = evt.message.split(' ');
-  if (evt.message == '!grav')
+  world.afterEvents.chatSend.subscribe(function(evt)
   {
-    if (evt.sender.playerPermissionLevel == 2) // Operator
+    const sp = evt.message.split(' ');
+    if (evt.message == '!grav')
     {
-      globalThis.gravity_enabled = !globalThis.gravity_enabled;
-      world.sendMessage('Gravity is now ' + (globalThis.gravity_enabled ? 'enabled' : 'disabled'));
+      if (evt.sender.playerPermissionLevel == 2) // Operator
+      {
+        globalThis.gravity_enabled = !globalThis.gravity_enabled;
+        world.sendMessage('Gravity is now ' + (globalThis.gravity_enabled ? 'enabled' : 'disabled'));
+      }
     }
-  }
-  else if (sp[0] == '!gravr')
-  {
-    if (evt.sender.playerPermissionLevel == 2) // Operator
+    else if (sp[0] == '!gravr')
     {
-      var new_radius = (sp[1]|0) || DEFAULT_RADIUS;
-      globalThis.radius = new_radius;
-      world.sendMessage('Gravity pass radius is now ' + new_radius);
+      if (evt.sender.playerPermissionLevel == 2) // Operator
+      {
+        var new_radius = (sp[1]|0) || DEFAULT_RADIUS;
+        globalThis.radius = new_radius;
+        world.sendMessage('Gravity pass radius is now ' + new_radius);
+      }
     }
-  }
-  else if (sp[0] == '!grava')
-  {
-    if (evt.sender.playerPermissionLevel == 2) // Operator
+    else if (sp[0] == '!grava')
     {
-      var new_alignment_factor = (sp[1]|0) || DEFAULT_ALIGNMENT_FACTOR;
-      globalThis.alignment_factor = new_alignment_factor;
-      world.sendMessage('Gravity pass alignment factor is now ' + new_alignment_factor);
+      if (evt.sender.playerPermissionLevel == 2) // Operator
+      {
+        var new_alignment_factor = (sp[1]|0) || DEFAULT_ALIGNMENT_FACTOR;
+        globalThis.alignment_factor = new_alignment_factor;
+        world.sendMessage('Gravity pass alignment factor is now ' + new_alignment_factor);
+      }
     }
-  }
-  else if (evt.message == '!gravq')
-  {
-    world.sendMessage('Gravity pass queue length is ' + globalThis.ordered_enqueued_passes.length);
-  }
-});
+    else if (evt.message == '!gravq')
+    {
+      world.sendMessage('Gravity pass queue length is ' + globalThis.ordered_enqueued_passes.length);
+    }
+  });
+}
 
 const enque_block_event_coords_for_pass_if_not_already_in_queue = function(evt)
 {
